@@ -34,17 +34,15 @@
       });
     });
 
-    // KELLEY FIX
     describe('cipher', function () {
-      it('', function () {
-        expect( bar.cipher("kelley") ).to.equal("");
+      it('should turn a string into code', function () {
+        expect( bar.cipher("kelley") ).to.equal("ÏÉÐÐÉÝ");
       });
     });
 
-    // KELLEY FIX
     describe('decipher', function () {
-      it('', function () {
-        expect( bar.decipher("kelley") ).to.equal("");
+      it('should turn code from cipher back into original string', function () {
+        expect( bar.decipher("ÏÉÐÐÉÝ") ).to.equal("kelley");
       });
     });
 
