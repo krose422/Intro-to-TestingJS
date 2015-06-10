@@ -24,7 +24,8 @@
     // KELLEY NEED TO FIX THIS ONE
     describe('exponentOf', function () {
       it('should return the exponent of a number', function () {
-        expect( bar.exponentOf(2) ).to.equal();
+        var first = bar.exponentOf(2)
+        expect(first(2)).to.equal(4);
       });
     });
 
